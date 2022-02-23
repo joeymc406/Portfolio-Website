@@ -4,13 +4,8 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
-/*
-Important Note: Make sure you keep (and turn in) not only your new
-“style.production.css” file but also your “styles.css” file.
-Any future changes to your CSS should be made through your original
-“styles.css” files, then this process should be repeated again to
-create a new “style.production.css” file.
 
+/*
 Main background color lightgrey #d3d3d3
 dark slate gray #2f4f4f
 darkolive green #556b2f 2ndary color
@@ -24,8 +19,6 @@ Color for Selected Link blue #0000ff
 font styel Roboto Condensed sizes 300, 400 & 700
 first button dark sea green #8fbc8f
  */
-background {
-   color: ##556b2f;
  }
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -35,6 +28,7 @@ body {
   line-height: 1.6;
   /*sets the line-height to 1.6*//*  */
   text-align: center;
+  background-color: #556b2f;
 }
 h1 {
   font-size: 30px;
@@ -243,7 +237,7 @@ button:focus,
 }
 .profile {
   max-width: 700px;
-  text-align: center;
+  margin: 0 auto;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -260,6 +254,7 @@ button:focus,
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
+          background-color: #556b2f
 }
 .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -313,6 +308,11 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 10px;
+}
+.experience-table {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 @media all and (max-width: 500px) {
   .grid {

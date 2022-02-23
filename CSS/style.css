@@ -111,7 +111,7 @@ button:focus,
 }
 .profile {
   max-width: 700px;
-  text-align: center;
+  margin: 0 auto;
 }
 * {
   box-sizing: border-box;
@@ -172,6 +172,10 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 10px;
+}
+.experience-table {
+  max-width: 700px;
+  margin: 0 auto;
 }
 @media all and (max-width: 500px) {
   .grid {
