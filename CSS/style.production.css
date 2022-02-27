@@ -325,21 +325,22 @@ button:focus,
 .work-list {
   display: -ms-grid;
   display: grid;
-  background-color: lightgray;
+  background-color: #556b2f;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 10px;
 }
+.work-list-tem {
+  padding: 20px;
+  margin-left: 25px;
+  background-color: lightgrey;
+}
 .experience-table {
   max-width: 700px;
   margin: 0 auto;
 }
-.grid-item {
-  padding: 20px;
-  margin-left: 25px;
-  background-color: #556b2f;
-}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
