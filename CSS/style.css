@@ -64,7 +64,7 @@ button,
 .button1,
 .button2,
 .button3,
-.my-input
+.my-input,
 .button, button {
   /*overwrites browser defaults & resets the border */
   border: none;
@@ -242,4 +242,13 @@ button:focus,
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+.page-footer {
+  margin: 0;
+}
+.page-footer-item1,
+.page-footer-item2,
+.page-footer-item3,
+.page-footer-item4 {
+  padding: 10px;
 }
