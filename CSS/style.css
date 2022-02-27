@@ -178,6 +178,7 @@ button:focus,
 .grid-item {
   padding: 20px;
   margin-left: 25px;
+  background-color: #556b2f;
 }
 @media all and (max-width: 500px) {
   .grid {
