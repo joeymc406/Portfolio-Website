@@ -175,6 +175,10 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
 }
+.grid-item {
+  padding: 20px;
+  margin-left: 25px;
+}
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
