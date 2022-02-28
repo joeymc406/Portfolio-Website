@@ -43,16 +43,15 @@
             <a href="mailto:joeymc406@gmail.com">Contact Me</a>
             <!--figure out the action portion here-->
             <form action="contact-form" method="post" id="contact-form">
-              <label> class="standard-label for="contact-email" >*E-mail:</label>
-              <input type="email" id="contact-email" required><br>
+              <label class="standard-label" for="contact-email">Email: </label>
+              <input type="Email" id="contact-email" required>
 
-              <label> class="standard-label" for="contact-telephone" >*Telephone: </label>
-              <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone" ><br>
+              <label class="standard-label" for=contact-telephone>Telephone: </label>
+              <input type="tel"  id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-              <label> class="standard-label" for="contact-message" >*Message: 250 max characters </label>
-              <textarea maxlength="250" id="contact-message" required></textarea><br>
-
-              <input type="submit" value="send message">
+              <label class="standard-label" for="contact-message">Message: </label>
+              <textarea required maxlength="300"></textarea>
+              <input type="submit" id="contact-message" value="send Message">
               <p>Find me on:</p>
             </form>
           </div>

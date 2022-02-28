@@ -237,6 +237,7 @@ width: 33%;
   }
 }
 .cloud-front {
+  background-color: ;
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
@@ -262,4 +263,7 @@ width: 33%;
 .page-footer-item3,
 .page-footer-item4 {
   padding: 10px;
+}
+.standard-label {
+  padding: 20px;
 }

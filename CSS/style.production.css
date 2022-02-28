@@ -13,7 +13,7 @@ Button Text Color Black #000000
 button text color white: ghost white: # f8f8ff
 Color for Visited Link Darkred #8b0000
 Color for Selected Link blue #0000ff
-font styel Roboto Condensed sizes 300, 400 & 700
+font style Roboto Condensed sizes 300, 400 & 700
 first button dark sea green #8fbc8f
  */
 body {
@@ -427,6 +427,7 @@ width: 33%;
   }
 }
 .cloud-front {
+  background-color: white;
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
   -webkit-animation-name: cloud-move;
@@ -470,4 +471,7 @@ width: 33%;
 .page-footer-item3,
 .page-footer-item4 {
   padding: 10px;
+}
+.standard-label {
+  padding: 20px;
 }
