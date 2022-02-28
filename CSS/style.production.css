@@ -474,4 +474,5 @@ width: 33%;
 }
 .standard-label {
   padding: 20px;
+  display: block;
 }
