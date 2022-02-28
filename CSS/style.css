@@ -2,9 +2,6 @@
 Main background color lightgrey #d3d3d3
 dark slate gray #2f4f4f
 darkolive green #556b2f 2ndary color
-saddlebrown #8b4513
-darkcyan #008b8b) - want to add some shapes in these colors in my page to represent
-a mountain scene if possible
 Button Text Color Black #000000
 button text color white: ghost white: # f8f8ff
 Color for Visited Link Darkred #8b0000
@@ -164,22 +161,34 @@ button:focus,
 .about-list {
   list-style-type: none;
 }
-.work-list {
-  display: grid;
-  background color: #556b2f;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 10px;
+/* start grid fallback*/
+.grid-item {
+display:  inline-block;
+width: 33%;
 }
-.work-list-item {
-  padding: 20px;
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+  }
+}
+.grid-item {
+  background-color: #d3d3d3;
+  width: auto;
+  min-height: auto;
   margin-left: 25px;
-  background-color: #lightgrey;
+  padding: 20px;
+
+}
+.grid__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
 }
 .experience-table {
   max-width: 700px;
   margin: 0 auto;
-}
 }
 @media all and (max-width: 500px) {
   .grid {
@@ -196,15 +205,11 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
+}
   h1 {
     font-size: 22px;
-  }
-  /*add styling here*/
 }
+  /*add styling here*/
 @keyframes color-change {
   0% {
     fill: #edc655;
