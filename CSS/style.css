@@ -1,23 +1,22 @@
 /*
-Main background color lightgrey #d3d3d3
-dark slate gray #2f4f4f
-darkolive green #556b2f 2ndary color
-Button Text Color Black #000000
-button text color white: ghost white: # f8f8ff
-Color for Visited Link Darkred #8b0000
-Color for Selected Link blue #0000ff
-font styel Roboto Condensed sizes 300, 400 & 700
-first button dark sea green #8fbc8f
+Main background color Medium Sea Green #3cb371
+Font color: black #000000
+Selected link color: #00008b dark blue
+visited link color #800000 maroon
+Button color: #0000ff blue
+button text color: # white #f8f8ff
+table color: #2f4f4f dark slate gray
  */
  :root {
    --primary-font-weight: 300;
    --secondary-font-weight: 700;
-   --primary-color: #d3d3d3;
-   --secondary-color: #556b2f;
+   --primary-color: #3cb371;
+   --secondary-color: #2f4f4f; /*dark sea green*/
    --text-color: #000;
-   --visited-color: #8b0000;
-   --selected-color: #0000ff;
+   --visited-color: #800000; /*maroon*/
+   --selected-color: #00008b;/*dark blue*/
    --white-text-color: #f8f8ff;
+   --button-color: #0000ff;
  }
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -27,7 +26,7 @@ body {
   line-height: 1.6;
   /*sets the line-height to 1.6*//*  */
   text-align: center;
-  background-color: #556b2f;
+  background-color: #3cb371;
 }
 h1 {
   font-size: 30px;
@@ -70,7 +69,7 @@ button,
   font-family: inherit;
   /*styles background color, font color & text decoration (underline/etc.)
   of the button*/
-  background-color: var(--secondary-color);
+  background-color: var(--button-color);
   color: var(--white-text-color);
   text-decoration: none;
   /*adds spacing to the button9explained later)*/
@@ -175,7 +174,7 @@ width: 33%;
   }
 }
 .grid-item {
-  background-color: #d3d3d3;
+  background-color: #2f4f4f;
   width: auto;
   min-height: auto;
   margin-left: 25px;
@@ -237,7 +236,7 @@ width: 33%;
   }
 }
 .cloud-front {
-  background-color: ;
+  background-color: white ;
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
@@ -265,5 +264,6 @@ width: 33%;
   padding: 10px;
 }
 .standard-label {
-  padding: 20px;
+  padding: 10px;
+  display: inline-block;
 }
