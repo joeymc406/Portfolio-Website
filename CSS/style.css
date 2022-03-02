@@ -7,7 +7,7 @@ Button color: #0000ff blue
 button text color: # white #f8f8ff
 table color: #2f4f4f dark slate gray
  */
- :root {
+:root {
    --primary-font-weight: 300;
    --secondary-font-weight: 700;
    --primary-color: #3cb371;
@@ -44,7 +44,7 @@ a {
   color: var(--secondary-color);
 }
 a:visited {
-    /*visited link*/
+/* visited link */
   color: var(--visited-color);
 }
 a:hover,
@@ -162,8 +162,8 @@ button:focus,
 }
 /* start grid fallback*/
 .grid-item {
-display:  inline-block;
-width: 33%;
+  display: inline-block;
+  width: 33%;
 }
 @supports (display: grid) {
   .grid {
@@ -179,7 +179,6 @@ width: 33%;
   min-height: auto;
   margin-left: 25px;
   padding: 20px;
-
 }
 .grid__item:last-child {
   grid-column: auto / auto;
@@ -236,7 +235,7 @@ width: 33%;
   }
 }
 .cloud-front {
-  background-color: white ;
+  background-color: white;
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
